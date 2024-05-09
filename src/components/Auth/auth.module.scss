@@ -1,0 +1,20 @@
+.auth{
+  display: flex;
+
+  //height: 100%;
+  &__text{
+    font-weight: 500;
+    font-size: 18px;
+    height: inherit;
+    display: flex;
+    align-items: center;
+
+    &_reg{
+      color: var(--primary-color);
+      background-color: var(--secondary-color);
+      border-radius: 17px;
+      margin-left: 0.5rem;
+      padding: 0.5rem 1rem;
+    }
+  }
+}

@@ -1,0 +1,52 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 65px;
+  background-color: var(--white);
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid lightgray;
+
+  .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__text{
+      color: var(--secondary-color);
+      font-weight: 600;
+      font-size: 21px;
+      margin-left: 0.5rem;
+    }
+  }
+
+  .nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    &__text{
+      font-weight: 500;
+      font-size: 18px;
+      margin-right: 0.5rem;
+      height: inherit;
+      display: flex;
+      align-items: center;
+
+
+      &:last-child{
+        margin-right: 0;
+      }
+
+      & a{
+        transition: color  0.1s;
+
+        &:hover{
+          color: var(--secondary-color);
+        }
+      }
+    }
+  }
+}
