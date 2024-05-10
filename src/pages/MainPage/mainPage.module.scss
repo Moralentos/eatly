@@ -1,7 +1,7 @@
 .preview {
   display: flex;
   align-items: center;
-
+  margin-top: 2rem;
 
   &__info {
     display: flex;
@@ -39,10 +39,12 @@
     &_start{
       background-color: var(--secondary-color);
       color: var(--primary-color);
+      font-size: 16px;
     }
     &_pro{
       outline: 1px solid var(--secondary-color);
       background-color: var(--white);
+      font-size: 16px;
 
       &:hover{
         background-color: var(--secondary-color);
@@ -66,9 +68,87 @@
 
   &__score {
     margin-top: 2rem;
+    display: flex;
+    align-items: center;
+
+    &_logo {
+      width: 30px;
+      height: 30px;
+
+    }
+
+    &_rate {
+      width: 15px;
+      height: 15px;
+      display: flex;
+      align-items: center;
+
+    }
+
+    div {
+      display: flex;
+      align-items: center;
+
+      &:first-child {
+        margin-right: 0.7rem;
+
+        span{
+          font-weight: 700;
+          margin-left: 0.2rem;
+        }
+      }
+
+      &:last-child {
+
+        span{
+          color: gray;
+          margin-left: 0.2rem;
+        }
+      }
+
+    }
   }
 
   &__img {
 
+  }
+}
+
+.info_line {
+  height: 220px;
+  width: 100%;
+  background-color: var(--secondary-color);
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: var(--primary-color);
+  padding: 0 16rem;
+
+  &__block {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 43px;
+    margin-bottom: 1rem;
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+  &__void {
+    height: 123px;
+    width: 1px;
+    background-color: rgba(197, 197, 197, 1);
+    opacity: 0.1;
   }
 }
