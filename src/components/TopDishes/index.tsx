@@ -26,12 +26,17 @@ const TopDishes: React.FC = () => {
   };
 
   return (
-    <div className={styles.top}>
-      <h1>Наши Лучшие Блюда</h1>
+    <div className={styles.carousel}>
+      <div className={styles.carousel__text}>
+        <span>
+          Наши Лучшие{" "}
+          <span className={` ${styles.carousel__text_color}`}>Блюда</span>
+        </span>
+      </div>
       <Carousel
         responsive={responsive}
         additionalTransfrom={0}
-        arrows
+        arrows={false}
         autoPlay
         autoPlaySpeed={5000}
         centerMode={false}
@@ -39,7 +44,7 @@ const TopDishes: React.FC = () => {
         containerClass="container-with-dots"
         customTransition="all 1s linear"
         dotListClass=""
-        draggable
+        draggable={true}
         focusOnSelect={false}
         infinite
         itemClass=""
@@ -56,7 +61,7 @@ const TopDishes: React.FC = () => {
         showDots={false}
         sliderClass=""
         slidesToSlide={2}
-        swipeable
+        swipeable={true}
         transitionDuration={1000}
       >
         {new Array(10).fill(0).map(() => (

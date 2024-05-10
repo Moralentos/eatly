@@ -1,0 +1,32 @@
+.footer {
+  width: 100%;
+
+  background-color: rgba(234, 234, 234, 1);
+
+  .logo {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 100px;
+    border-bottom: 1px solid lightgray;
+    &__text {
+      color: var(--secondary-color);
+      font-weight: 600;
+      font-size: 21px;
+      margin-left: 0.5rem;
+    }
+  }
+
+  .copyright {
+    height: 100px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    span {
+      font-weight: 500;
+      font-size: 17px;
+      color: gray;
+    }
+  }
+}

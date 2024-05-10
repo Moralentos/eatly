@@ -3,6 +3,8 @@ import styles from "./mainPage.module.scss";
 import Header from "../../components/Header";
 import foodPic from "../../assets/mainPageFoodPreview.png";
 import TopDishes from "../../components/TopDishes";
+import SaleBanner from "../../components/SaleBanner";
+import Footer from "../../components/Footer";
 
 const MainPage: React.FC = () => {
   return (
@@ -101,7 +103,9 @@ const MainPage: React.FC = () => {
       </div>
       <div className="container">
         <TopDishes></TopDishes>
+        <SaleBanner></SaleBanner>
       </div>
+      <Footer></Footer>
     </>
   );
 };

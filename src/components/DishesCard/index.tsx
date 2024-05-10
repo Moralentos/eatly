@@ -1,8 +1,7 @@
-import React from "react";
+// import React from "react";
 import styles from "./dishesCard.module.scss";
 import pic from "../../assets/food.png";
 import star from "../../assets/star.svg";
-import like from "../../assets/like.svg";
 
 const DishesCard = () => {
   return (

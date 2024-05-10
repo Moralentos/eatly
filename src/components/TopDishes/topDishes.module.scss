@@ -1,7 +1,17 @@
-.top {
-  margin-bottom: 4rem;
+.carousel {
+  margin-top: 2rem;
+  margin-bottom: 6rem;
 
-  &__void {
-    margin-right: 1rem;
+  &__text {
+    font-weight: 700;
+    font-size: 25px;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &_color {
+      color: var(--secondary-color);
+    }
   }
 }
