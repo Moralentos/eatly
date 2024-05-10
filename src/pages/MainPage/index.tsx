@@ -1,16 +1,13 @@
 import React from "react";
 import styles from "./mainPage.module.scss";
-import Header from "../../components/Header";
 import foodPic from "../../assets/mainPageFoodPreview.png";
 import TopDishes from "../../components/TopDishes";
 import SaleBanner from "../../components/SaleBanner";
-import Footer from "../../components/Footer";
 
 const MainPage: React.FC = () => {
   return (
     <>
       <div className={"container"}>
-        <Header></Header>
         <div className={styles.preview}>
           <div className={styles.preview__info}>
             <div
@@ -105,7 +102,6 @@ const MainPage: React.FC = () => {
         <TopDishes></TopDishes>
         <SaleBanner></SaleBanner>
       </div>
-      <Footer></Footer>
     </>
   );
 };
