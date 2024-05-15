@@ -7,7 +7,7 @@ import SaleBanner from "../../components/SaleBanner";
 const MainPage: React.FC = () => {
   return (
     <>
-      <div className={"container"}>
+      <main className={"container"}>
         <div className={styles.preview}>
           <div className={styles.preview__info}>
             <div
@@ -72,7 +72,7 @@ const MainPage: React.FC = () => {
             <img src={foodPic} alt="" />
           </div>
         </div>
-      </div>
+      </main>
       <div className={styles.info_line}>
         <div className={styles.info_line__block}>
           <span className={styles.info_line__title}>10K+</span>

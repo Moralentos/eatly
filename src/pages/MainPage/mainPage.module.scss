@@ -124,6 +124,7 @@
   align-items: center;
   color: var(--primary-color);
   padding: 0 16rem;
+  flex-shrink: 0;
 
   &__block {
     height: 100%;
