@@ -5,6 +5,8 @@ import pizza from "../../assets/Pizza.svg";
 import hotdog from "../../assets/Hotdog.svg";
 import donat from "../../assets/Doughnut.svg";
 import ice from "../../assets/Icecream.svg";
+import TopDishes from "../../components/TopDishes";
+import DishesCard from "../../components/DishesCard";
 
 const Price: React.FC = () => {
   return (
@@ -31,29 +33,44 @@ const Price: React.FC = () => {
           </div>
         </div>
         <div className={styles.filter}>
-          <span>Категория</span>
+          <span className={styles.filter__title}>Категория</span>
           <div className={styles.filter__icon}>
             <div className={styles.filter__icon_pizza}>
-              <div>
-                <img src={pizza} alt="" />
-              </div>
+              <img src={pizza} alt="" />
+              <span>Pizza</span>
             </div>
             <div className={styles.filter__icon_hotdog}>
-              <div>
-                <img src={hotdog} alt="" />
-              </div>
+              <img src={hotdog} alt="" />
+              <span>Asian</span>
             </div>
             <div className={styles.filter__icon_donat}>
-              <div>
-                <img src={donat} alt="" />
-              </div>
+              <img src={donat} alt="" />
+              <span>Donat</span>
             </div>
             <div className={styles.filter__icon_ice}>
-              <div>
-                <img src={ice} alt="" />
-              </div>
+              <img src={ice} alt="" />
+              <span>Ice</span>
             </div>
           </div>
+          <span className={styles.filter__title}>Сортировать по:</span>
+          <div className={styles.filter__sort}>
+            <span
+              className={`${styles.filter__text} ${styles.filter__text_active}`}
+            >
+              Убыванию
+            </span>
+            <span className={`${styles.filter__text}`}>Возрастанию</span>
+          </div>
+          <button className={styles.filter__button}>Применить</button>
+        </div>
+      </div>
+      <TopDishes></TopDishes>
+      <div className={styles.list}>
+        <span className={styles.list__title}>Блюда</span>
+        <div className={styles.list__dishes}>
+          {new Array(13).fill(0).map(() => (
+            <DishesCard></DishesCard>
+          ))}
         </div>
       </div>
     </main>
