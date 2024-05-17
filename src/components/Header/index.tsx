@@ -4,14 +4,21 @@ import logo from "../../assets/Logo.svg";
 import Auth from "../Auth";
 import { Link } from "react-router-dom";
 
-const Header: React.FC = (): React.ReactNode => {
-  const [isAuth, setAuth] = useState<boolean>(false);
-  const navBtn: string[][] = [
-    ["Меню", "/"],
-    ["Блог", "blog"],
+type TNavBtn =
+  | ["Главная", "/"]
+  | ["Отзывы", "blog"]
+  | ["Цены", "price"]
+  | ["Избранное", "favorites"];
+
+const Header: React.FC = () => {
+  const [isAuth, setAuth] = useState<boolean>(true);
+  const navBtn: Array<TNavBtn> = [
+    ["Главная", "/"],
+    ["Отзывы", "blog"],
     ["Цены", "price"],
-    ["Контакты", "contacts"],
+    ["Избранное", "favorites"],
   ];
+
   return (
     <>
       <header className={`container`}>
@@ -20,9 +27,9 @@ const Header: React.FC = (): React.ReactNode => {
           <span className={styles.logo__text}>eatly</span>
         </div>
         <ul className={styles.nav}>
-          {navBtn.map((e: string[]) => (
+          {navBtn.map((elem: string[]) => (
             <li className={styles.nav__text}>
-              <Link to={e[1]}>{e[0]}</Link>
+              <Link to={elem[1]}>{elem[0]}</Link>
             </li>
           ))}
         </ul>
