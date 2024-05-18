@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./auth.module.scss";
 import ava from "../../assets/ava.jpg";
+import { Link } from "react-router-dom";
 
 interface AuthProps {
   isAuth: boolean;
@@ -52,9 +53,12 @@ const Auth: React.FC<AuthProps> = ({ isAuth, setAuth }) => {
       <a className={styles.auth__text} onClick={() => setAuth(true)} href="#">
         Войти
       </a>
-      <a className={`${styles.auth__text_reg} ${styles.auth__text}`} href="">
+      <Link
+        className={`${styles.auth__text_reg} ${styles.auth__text}`}
+        to={"/register"}
+      >
         Регистрация
-      </a>
+      </Link>
     </div>
   );
 };
