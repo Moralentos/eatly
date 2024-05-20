@@ -1,0 +1,195 @@
+.content {
+  width: 680px;
+  display: flex;
+  justify-content: center;
+  //align-items: center;
+
+  .empty {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 25px;
+  }
+
+
+  .list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+
+    .card {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      background-color: var(--primary-color);
+      border-radius: 12px;
+      padding: 5px 2rem 5px 5px;
+      box-shadow: 0 16.4px 24.6px 0 rgba(135, 125, 200, 0.25);
+      margin-top: 2rem;
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+      &__text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &_title {
+          font-size: 22px;
+          font-weight: 600;
+        }
+        &_price {
+          font-size: 18px;
+          font-weight: 600;
+        }
+
+      }
+
+      .info {
+        display: flex;
+        align-items: center;
+
+        img {
+          width: 100px;
+          height: 100px;
+        }
+      }
+
+      .count {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .btn {
+          display: flex;
+          align-items: center;
+
+          &__number {
+            margin: 0 0.5rem;
+            font-weight: 400;
+            font-size: 18px;
+          }
+
+          &__plus, &__minus {
+            font-size: 22px;
+            font-weight: 500;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #272343;
+            border-radius: 10px;
+            background-color: var(--primary-color);
+            cursor: pointer;
+            color: #272343;
+          }
+
+          &__plus_black {
+            background-color: #272343;
+            color: var(--primary-color);
+          }
+
+          &__price {
+            font-weight: 600;
+            font-size: 16px;
+            margin-top: 0.5rem;
+          }
+        }
+      }
+
+    }
+
+    .coupon {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      height: 60px;
+      margin-top: 5rem;
+
+      &__text {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        background-color: rgb(241, 241, 241);
+        height: 100%;
+        border-radius: 10px;
+        margin-right: 10px;
+
+        svg {
+          color: rgba(172, 173, 185, 1);
+          height: 30px;
+          width: 55px;
+        }
+
+        span {
+          width: 100%;
+          background-color:rgba(241, 241, 241, 1);
+        }
+      }
+
+      &__active {
+        color: rgba(50, 49, 66, 1);
+        font-weight: 300;
+      }
+
+      &__btn {
+        height: 100%;
+        width: 200px;
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
+        border: none;
+        cursor: pointer;
+        border-radius: 10px;
+        font-weight:500;
+        font-size: 18px;
+      }
+    }
+
+    .order {
+      width: 100%;
+      margin-top: 5rem;
+
+      &__info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: rgba(50, 49, 66, 1);
+        font-weight: 200;
+        font-size: 20px;
+        border-bottom: 1px dashed #272343;
+        padding: 8px 0;
+        margin-top: 0.5rem;
+
+
+      }
+
+      &_total {
+        color: rgba(50, 49, 66, 1);
+        font-weight: 600;
+        font-size: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 1.5rem;
+      }
+
+      button{
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
+        border: none;
+        cursor: pointer;
+        border-radius: 10px;
+        font-weight:500;
+        font-size: 18px;
+        width: 100%;
+        margin-top: 3rem;
+        height: 60px;
+      }
+    }
+  }
+}

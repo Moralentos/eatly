@@ -7,6 +7,7 @@ import Price from "./pages/Price";
 import Favorites from "./pages/Favorites";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
+import Cart from "./pages/Cart";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/favorites" element={<Favorites></Favorites>} />
         <Route path="/register" element={<Register></Register>} />
         <Route path="/login" element={<Login></Login>} />
+        <Route path="/cart" element={<Cart></Cart>} />
       </Routes>
       <Footer></Footer>
     </BrowserRouter>
